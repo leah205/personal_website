@@ -1,0 +1,208 @@
+:root {
+  --accent-color: rgb(233, 232, 232);
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  height: 100px;
+  background: rgb(233, 232, 232);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a.selected {
+  text-decoration-line: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul,
+footer ul {
+  display: flex;
+  height: 100%;
+
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav ul {
+  width: 50vw;
+}
+footer ul {
+  width: 100vw;
+}
+nav ul a {
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+}
+nav ul a:hover,
+button:hover {
+  background: rgb(214, 214, 214);
+}
+.brain-icon {
+  height: 50px;
+}
+main {
+  margin-top: 50px;
+}
+main.home-main {
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+}
+p {
+  font-size: 1.5rem;
+}
+a {
+  color: black;
+  font-size: 2rem;
+}
+footer {
+  background: var(--accent-color);
+  margin-top: 20px;
+  width: 100vw;
+  font-size: 2rem;
+  height: 100px;
+}
+
+.hobbies,
+.projects {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  height: 500px;
+  width: 500px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+.card img {
+  height: 300px;
+}
+h2 {
+  font-size: 2rem;
+}
+.home-main {
+  margin-top: 100px;
+  border-radius: 50px;
+  background: rgb(174, 105, 116);
+  max-width: 1000px;
+  color: white;
+  padding: 50px;
+}
+.home-main img {
+  height: 400px;
+}
+.home-main button {
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent-color);
+  height: 70px;
+}
+.projects a:hover {
+  color: purple;
+}
+.resume {
+  margin: 20px auto;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resume .description p {
+  font-size: 1.7rem;
+}
+.education {
+  padding: 20px;
+  width: 100%;
+}
+.resume h3 {
+  font-size: 1.7rem;
+}
+.education .top {
+  display: flex;
+  justify-content: space-between;
+}
+.resume {
+  margin: 20px auto;
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.resume p,
+.resume li {
+  font-size: 1.5rem;
+}
+.education,
+.experience {
+  text-align: left;
+}
+.resume .header {
+  text-align: center;
+}
+hr {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 0px 10px;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  .card {
+    height: 400px;
+    max-width: 90vw;
+  }
+  .card img {
+    height: 200px;
+  }
+  footer ul {
+    padding-left: 10px;
+    justify-content: space-between;
+    width: 90%;
+    height: 50px;
+  }
+  nav ul {
+    padding-left: 5px;
+    gap: 8px;
+  }
+  main.home-main {
+    margin: 20px auto;
+    width: 230px;
+  }
+  .home-main img {
+    height: 200px;
+  }
+  .resume {
+    width: 75vw;
+  }
+}
