@@ -114,10 +114,10 @@ h2 {
   background: rgb(174, 105, 116);
   max-width: 1000px;
   color: white;
-  padding: 50px;
+  padding: 30px;
 }
 .home-main img {
-  height: 400px;
+  height: 300px;
 }
 .home-main button {
   border: 0;
